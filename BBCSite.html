@@ -28,7 +28,6 @@
   width: 25px;
   height: 25px;  
   border-radius: 50%;
-  font-color: #FFFFFF;
   padding: 0px 40px;
 } 
 /*img.signin {
@@ -121,39 +120,17 @@ svg {
 }
 
 .imgLeft {
-  float: left;
-  width: 50%;
-  height: 500px;
+  display: inline-grid;
 }
 .imgLeft img {
   order: -1;
-  width: auto;
-  padding-right: 5px;
-  height: 50%;
 }
 .imgRight {
-  float: right;
-  width: 50%;
-  height: 50%;
+  display: grid;
+  vertical-align: right;
 }
 .imgRight img {
   order: -1;
-  width: 50%;
-}
-html {
-  height: 100%;
-}
-header,footer{
-  flex: none;
-}
-body{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-main{
-  overflow: auto;
-  flex: auto;
 }
 
 </style>
@@ -204,23 +181,22 @@ main{
     <main>
       <section class="imgLeft">
         <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:left;">Welcome to BBC.com</h3>
-        <img src="https://drive.google.com/thumbnail?id=1CsmM-4j3pi83kQyLclI5y-vMFhEjKURy" align="left" >
-        <img src="https://drive.google.com/thumbnail?id=1V-Ro9nn4FO8-xZIUUdcO-xQ-QW1CPasE">
-      </section>
-    
-    <aside class="imgRight">
-      <section class="imgRight">
         <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:right;">Thursday, 13 August</h3>
+        <div>
+        <img src="https://drive.google.com/thumbnail?id=1CsmM-4j3pi83kQyLclI5y-vMFhEjKURy">
+        <img src="https://drive.google.com/thumbnail?id=1V-Ro9nn4FO8-xZIUUdcO-xQ-QW1CPasE">
+        </div>
+      </section>
+    </main>
+    <aside>
+      <section class="imgRight">
+        
         <img src="https://drive.google.com/thumbnail?id=1CyE3iIpMtsjRve2k3BB5CCYZ0oe01sI7">
-        <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw" align="right">
-        <img src="https://drive.google.com/thumbnail?id=1JxELzyLufGZsmaAiHJ4Kckf_jIaCSSWI">
-        <img src="https://drive.google.com/thumbnail?id=1OPqAEv1AxTWh529KJ8KvX6kByc4KAFRG" align="right">
+      </section>
+      <section class="imgRight">
+        <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw">
       </section>
     </aside>
-  </main>
     
   </body>
-  <footer>
-
-  </footer>
 </html>
