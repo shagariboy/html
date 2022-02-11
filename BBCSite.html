@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  /* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ padding: 10px 10px;
+ background-color: #000000;
+ color: #fff;
+ height: 25px;
+ gap: 1em;
+ font-family: Tahoma;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ padding: 10px 0px;
+ height: 25px;
+ width: 20px;
+ gap: 1em;
+}
+/* SIGN IN */
+.signin {
+  width: 25px;
+  height: 25px;  
+  border-radius: 50%;
+  font-color: #FFFFFF;
+  padding: 0px 40px;
+} 
+/*img.signin {
+  border-radius: 50;
+}*/
+.text {
+  font-size:10px;
+  padding-left:0px;
+  vertical-align:left;
+}
+.vertical-line{
+  display: inline-flex;
+  border-left: 1px solid #fff;
+  margin: 0px 100px 0pxx;
+  height: 25px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ list-style: none;
+ gap: 1em;
+ font-size: 18px;
+ align-items: center;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px;
+ margin-left: 10px;
+}
+/* DROPDOWN MENU */
+.more {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.more:hover .dropdown {
+ display: block;
+}
+.form {
+  background-color: #fff;
+  width: 195px;
+  height: 25px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #000000;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+.imgLeft {
+  float: left;
+  width: 50%;
+  height: 500px;
+}
+.imgLeft img {
+  order: -1;
+  width: auto;
+  padding-right: 5px;
+  height: 50%;
+}
+.imgRight {
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+.imgRight img {
+  order: -1;
+  width: 50%;
+}
+html {
+  height: 100%;
+}
+header,footer{
+  flex: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main{
+  overflow: auto;
+  flex: auto;
+}
+
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>BBC News</title>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo"><img src="https://drive.google.com/thumbnail?id=1q-Sqp2DGd-TsI50-c0rVM1_9-RRByJ9_" width="100px;" height="25px;" vertical-align="middle;" padding="0px 0px;"></div>
+      <span class="vertical-line"></span>
+      <!--SIGN IN -->
+      <div class="signin"><img src="https://drive.google.com/thumbnail?id=1-VZqzYhrgorLYkprRWn75bqUmzNyBaPp" class="signin" width="25px;" height="25px;" vertical-align="middle;"/></div>
+      <div class="text"><h2 style="font-family: Tahoma;">Sign in</h2></div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Home</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">News</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Sport</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Reel</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Worklife</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Travel</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Future</a></li>
+          <li><a href="/" style="text-decoration:none; cursor:default !important">Culture</a></li>
+          <li class="more">
+            <a href="/" style="text-decoration:none; cursor:default !important">More</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Dropdown 1 </a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 2</a></li>
+              <li><a href="/">Dropdown 3</a></li>
+              <li><a href="/">Dropdown 4</a></li>
+            </ul>
+          </li>
+        </div>
+      </ul>
+      <form class="form" role="search"><input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+      </form>
+    </nav>
+    </header>
+    <main>
+      <section class="imgLeft">
+        <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:left;">Welcome to BBC.com</h3>
+        <img src="https://drive.google.com/thumbnail?id=1CsmM-4j3pi83kQyLclI5y-vMFhEjKURy" align="left" >
+        <img src="https://drive.google.com/thumbnail?id=1V-Ro9nn4FO8-xZIUUdcO-xQ-QW1CPasE">
+      </section>
+    
+    <aside class="imgRight">
+      <section class="imgRight">
+        <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:right;">Thursday, 13 August</h3>
+        <img src="https://drive.google.com/thumbnail?id=1CyE3iIpMtsjRve2k3BB5CCYZ0oe01sI7">
+        <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw" align="right">
+        <img src="https://drive.google.com/thumbnail?id=1JxELzyLufGZsmaAiHJ4Kckf_jIaCSSWI">
+        <img src="https://drive.google.com/thumbnail?id=1OPqAEv1AxTWh529KJ8KvX6kByc4KAFRG" align="right">
+      </section>
+    </aside>
+  </main>
+    
+  </body>
+  <footer>
+
+  </footer>
+</html>
