@@ -1,0 +1,262 @@
+<html>
+    <style>
+        .navBar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 11px 11px;
+            background-color: #FFFFFF;
+            color: blue;
+            height: 25px;
+            gap: 1em;
+            font-family: Tahoma;
+            border-bottom-style: solid;
+            border-bottom-color: grey;
+            width: 100%;
+            font-size: large;
+            padding: 10px 10px 20px;
+        }
+        .more {
+            position: relative; 
+            color: blue;
+            text-decoration: none;
+            cursor: default;
+            list-style: none;
+            margin-right: 10px;
+            margin-left: 60px;
+            padding: 10px 10px 10px 10px;
+           }   
+        .dropdown {
+            background-color: rgb(1, 139, 139);
+            padding: 1em 0;
+            position: absolute; /*WITH RESPECT TO PARENT*/
+            display: none;
+            border-radius: 8px;
+            top: 35px;
+        }
+        .dropdown li + li {
+            margin-top: 10px;
+           }
+        .dropdown li {
+            padding: 0.5em 1em;
+            width: 8em;
+            text-align: center;
+           }
+        .dropdown li:hover {
+            background-color: #4c9e9e;
+           }
+        .more:hover .dropdown {
+            display: block;
+           }
+        .arrow {
+
+            float: right;
+            height: 0px; width: 0px;
+	        border: 7px solid;
+	        border-color: 
+	    	blue
+	    	blue
+	    	transparent
+	    	transparent;
+	        transform: rotate(135deg);
+            margin-left: 10px;
+        }
+        .form {
+            background-color: rgb(243, 241, 241);
+            width: 195px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            padding: 5px 5px 5px 5px;
+            color: blue;
+            position: relative;
+          }
+          input {
+            all: unset;
+            font: 16px system-ui;
+            color: #aca9a9;
+            height: 100%;
+            width: 100%;
+            text-decoration: blue;
+            font-size: large;
+            padding: 10px 5px 10px 5px;
+
+          }
+          button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+          } 
+          svg {
+            color: #000000;
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+          }
+          ::-webkit-input-placeholder {
+              color: blue;
+          }      
+          :-moz-placeholder {
+              color: blue;
+          }
+          :-ms-input-placeholder {
+              color: blue;
+          }
+          .logo {
+              list-style: none;
+              font-size: larger;
+              padding-left: 50px;
+              padding-right: 0px;
+              margin-right: 0px;
+              text-align: right;
+          }
+          h2 {
+              font-family: Tahoma;
+              font-size: x-large;
+              list-style: none;
+              padding-left: 0px;
+              margin-left: 0px;
+              color: #000000;
+              padding-bottom: 12%;
+              text-align: right;
+          }
+          .menu {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            font-size: 18px;
+            align-items: center;
+           }
+
+           #link1 {
+               padding-left: 200px;
+           }
+           .mid {
+               width: 100%;
+               border: 1px solid yellow;
+               height: 5vh;
+           }
+           .imageLeft {
+            border: 1px solid red;
+            width: 40%;
+            height: 60vh;
+            float: left;
+            margin-left: 5%;
+           }
+          
+           .textRight {
+               border: 1px solid green;
+               width: 45%;
+               height: 60vh;
+               float: right;
+               margin-right: 5%;
+           }
+           .topText {
+               border: 1px solid pink;
+               width: 80%;
+               height: 25vh;
+               float: left;
+               margin-bottom: 2.5vh;
+               font-size: 45px;
+               font-family: Tahoma;
+               margin-top: 2.5vh;
+           }
+           .line {
+               border-top: 2px double rgb(117, 190, 169);
+               width: 40%;
+               float: left;
+               margin-top: 0vh;
+               transform: rotate(2deg);
+               
+           }
+           .midText {
+               border: 1px solid violet;
+               width: 80%;
+               height: 7vh;
+               float: left;
+               font-size: 15px;
+               font-family: Tahoma;
+               margin-top: 2.5vh;
+               color: rgb(71, 68, 68);
+           }
+           .linkBottom {
+               border: 1px solid gold;
+               width: 70%;
+               height: 10vh;
+               float: left;
+               margin-top: 2.5vh;
+           }
+           .linkMenu {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            font-size: 15px;
+            align-items: center;
+            color: #FFFFFF;
+            text-decoration: #FFFFFF;
+           }
+           .linkMenu .btn {
+               background-color: blue;
+               -webkit-border-radius: 8;  -moz-border-radius: 8;  border-radius: 8px;
+font-family: Tahoma;  color: #FFFFFF;  font-size: 15px;  padding: 10px;  text-decoration-color: #FFFFFF;
+           }
+           .linkMenu a {
+               color: white;
+           }
+          
+    </style>
+    <head>
+    </head>
+    <body>
+        <header>
+            <nav class="navBar">
+                <li class="more">
+                    <a href="/" style="text-decoration:none; cursor:default !important"> Courses</a>
+                    <div class="arrow"></div>
+                <ul class="dropdown">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                </ul>
+                </li>
+                <form class="form" role="search"><input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                    <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+                  </form>
+                  <li class="logo">
+                    <img src="https://drive.google.com/thumbnail?id=1EuxOWViFkE7I7u687K0PMSnsBmy7VjnY" width="50px;" height="50px;" vertical-align="middle;"/>
+                  </li>
+                  <li>
+                    <h2>Khan Academy</h2>
+                </li>
+                <div class="menu">
+                    <li id="link1"><a href="/" style="text-decoration:none; cursor:default !important">Donate</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Login</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Sign up</a></li>
+                </div>
+            </nav>
+        </header>
+        <section class="mid"></section>
+        <section class="imageLeft">
+            <img src="https://drive.google.com/thumbnail?id=1KCw0DJ_bpCqwEah-Z5SZWJ4i0vs6TJVX" width="100%" height="100%" vertical-align="middle;"/>
+        </section>
+        <section class="textRight">
+            <section class="topText">For every student, <br> every classroom. <br> Real results.</section>
+            <hr class="line">
+            <section class="midText">We're a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</section>
+            <section class="linkBottom">
+                <div class="linkMenu">
+                    <li class="btn"><a href="/" style="text-decoration:none; cursor:default !important">Learners</a></li>
+                    <li class="btn"><a href="/" style="text-decoration:none; cursor:default !important">Teachers</a></li>
+                    <li class="btn"><a href="/" style="text-decoration:none; cursor:default !important">Districts</a></li>
+                    <li class="btn"><a href="/" style="text-decoration:none; cursor:default !important">Parents</a></li>
+                </div>
+            </section>
+        </section>
+
+    </body>
+</html>

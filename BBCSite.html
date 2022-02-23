@@ -18,7 +18,7 @@
 }
 /* LOGO */
 .logo {
- padding: 10px 0px;
+ padding: 5px 0px;
  height: 25px;
  width: 20px;
  gap: 1em;
@@ -26,8 +26,9 @@
 /* SIGN IN */
 .signin {
   width: 25px;
-  height: 25px;  
+  height: 20px;  
   border-radius: 50%;
+  color: #FFFFFF;
   padding: 0px 40px;
 } 
 /*img.signin {
@@ -120,19 +121,166 @@ svg {
 }
 
 .imgLeft {
+  float: left;
   display: inline-grid;
 }
 .imgLeft img {
   order: -1;
+  width: 350px;
+  height: 300px;
+  padding-left: 5px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+}
+.container .textLeft {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  font-family: Tahoma;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  top: 30%;
+  color: white;
+  width: 70%;
+}
+.container1 {
+display: inline-block;
+position: relative;
+}
+.container1 .textRight {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  font-family: Tahoma;
+  margin: 0 0;
+  right: 0;
+  left: 0;
+  top: 20%;
+  color: white;
+  width: 50%;
+}
+.container1 .textRight1 {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  text-align: right;
+  font-family: Tahoma;
+  margin: 0 0;
+  right: 0;
+  left: 50%;
+  top: 20%;
+  color: white;
+  width: 50%;
+}
+.container2 {
+  display: inline-block;
+  position: relative;
+  }
+.container2 .textRight2 {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  text-align: left;
+  font-family: Tahoma;
+  margin: 0 0;
+  right: 0;
+  left: 0;
+  top: 20%;
+  color: white;
+  width: 50%;
+}
+.container2 .textRight3 {
+  background: transparent;
+  z-index: 1;
+  position: absolute;
+  text-align: right;
+  font-family: Tahoma;
+  margin: 0 0;
+  right: 0;
+  left: 50%;
+  top: 20%;
+  color: white;
+  width: 50%;
 }
 .imgRight {
+  float: right;
   display: grid;
   vertical-align: right;
 }
 .imgRight img {
   order: -1;
+  width: 250px;
+  height: 150px;
+  padding-right: 5px;
 }
-
+h1 {
+  font-family: Tahoma;
+  font-size: large;
+}
+h2 {
+  font-family: Tahoma;
+  font-size: medium;
+}
+p {
+  font-family: Tahoma;
+  font-size: small;
+}
+.container3 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.imgBelowleft {
+  float: left;
+  display: grid;
+  vertical-align: left;
+  width: 33.33%;
+}
+.imgBelowleft img {
+  order: -1;
+  width: 300px;
+  height: 150px;
+  padding-right: 5px;
+}
+.textBelowleft {
+  width: 300px;
+}
+.imgBelowmiddle {
+  float: middle;
+  display: grid;
+  vertical-align: left;
+  width: 33.33%;
+}
+.imgBelowmiddle img {
+  padding-top: 60px;
+  order: -1;
+  width: 300px;
+  height: 150px;
+  padding-right: 0px;
+}
+.textBelowmiddle {
+  width: 300px;
+}
+.imgBelowright {
+  float: right;
+  display: grid;
+  vertical-align: left;
+  width: 33.33%;
+}
+.imgBelowright img {
+  order: -1;
+  width: 300px;
+  height: 150px;
+  padding-right: 5px;
+}
+.textBelowright {
+  width: 300px;
+}
 </style>
   <head>
     <meta charset="utf-8">
@@ -181,22 +329,76 @@ svg {
     <main>
       <section class="imgLeft">
         <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:left;">Welcome to BBC.com</h3>
-        <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:right;">Thursday, 13 August</h3>
-        <div>
+        <div class="container">
         <img src="https://drive.google.com/thumbnail?id=1CsmM-4j3pi83kQyLclI5y-vMFhEjKURy">
         <img src="https://drive.google.com/thumbnail?id=1V-Ro9nn4FO8-xZIUUdcO-xQ-QW1CPasE">
+        <div class="textLeft">
+        <h1>Israel and UAE strike historic peace deal<h1>
+        <p>Israel and the UAE agree to normalise realtions, marking the third Israel-Arab peace deal.</p>
+        <h2>MIDDLE EAST</h2>
+        </div>
         </div>
       </section>
     </main>
     <aside>
       <section class="imgRight">
-        
+        <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:right;">Thursday, 13 August</h3>
+        <div class="container1">
         <img src="https://drive.google.com/thumbnail?id=1CyE3iIpMtsjRve2k3BB5CCYZ0oe01sI7">
-      </section>
-      <section class="imgRight">
-        <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw">
+        <div class="textRight">
+          <p>American, go home: Tension at Canada-US border</p>
+          <h3>CANADA</h3>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw"> 
+        <div class="textRight1">
+          <p>How will the world vaccinate seven billion people?</p>
+          <h3>HEALTH</h3>
+        </div></div><br>
+        <div class="container2">
+        <img src="https://drive.google.com/thumbnail?id=1JxELzyLufGZsmaAiHJ4Kckf_jIaCSSWI">
+        <div class="textRight2">
+          <p>The online 'productivity' gyms'</p>
+          <h3>WORKLIFE</h3>
+        </div>
+        <img src="https://drive.google.com/thumbnail?id=1OPqAEv1AxTWh529KJ8KvX6kByc4KAFRG">
+        <div class="textRight3">
+          <p>The folk singer murdered for his music</p>
+          <h3>CULTURE</h3>
+        </div>
+        </div>
       </section>
     </aside>
+    <section class="imgBelowleft">
+      <h3 style="font-family: Tahoma; color:rgb(64, 66, 66); text-align:left;">NEWS</h3>
+        <div class="container3">
+        <img src="https://drive.google.com/thumbnail?id=1VuoTyT2TJwBSMUvH8bh_A9nD6Hj8CNUK">
+        <div class="textBelowleft">
+        <h1>Biden and Harris say Trump has left US 'in tatters'<h1>
+        <p>Joe Biden and runnign mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+        <h2>US ELECTION 2020</h2>
+        </div>
+        </div>
+        </section>
+        <section class="imgBelowmiddle">
+        <div class="container3">
+        <img src="https://drive.google.com/thumbnail?id=1VII-YeP1c7wo6ip0W2_5uW2T6oBtHR4W">
+        <div class="textBelowmiddle">
+        <h1>Biden and Harris say Trump has left US 'in tatters'<h1>
+        <p>Joe Biden and runnign mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+        <h2>US ELECTION 2020</h2>
+        </div>
+        </div>
+    </section>
+    <section class="imgBelowright">
+    <div class="container3">
+    <img src="https://drive.google.com/thumbnail?id=1b_Ea5QSoShEhOoPFy-R3hL6i4ml9Owy4">
+    <div class="textBelowright">
+    <h1>Biden and Harris say Trump has left US 'in tatters'<h1>
+    <p>Joe Biden and runnign mate Kamala Harris call President Donald Trump a "whining" incompetent leader.</p>
+    <h2>US ELECTION 2020</h2>
+    </div>
+    </div>
+</section>
     
   </body>
 </html>
