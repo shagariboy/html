@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+        .navbar {
+            
+            width: 100%;
+            height: 5%;
+        }
+        .menuList {
+            font-family: Tahoma;
+            font-size: small;
+            color: gray;
+            list-style: none;
+            gap: 2em;
+            display: flex;
+            float: right;
+        }
+        .menuList a {
+            color: rgb(17, 16, 16);
+        }
+        #shopping-cart {
+            width: 18px;
+            height: 18px;
+            fill: orange;
+            left: 10px;
+            bottom: 12px;
+            position: absolute;
+            
+          }
+          
+        div {
+            width: 37px; 
+           background-image: inherit;
+           background-color: none; 
+            position: relative;
+          }
+          
+        #active {
+            background: #000;
+          }
+          
+        #active #shopping-cart {
+            fill: white;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            bottom: 2px;
+            left: 14px;
+          }
+        .svg-icon.search-icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            position: relative;
+            bottom: 12px;
+        }
+            /* On hover: blue strokes */
+           /* &:focus,
+            &:hover {
+              .search-path {
+                stroke: #299ecc;
+              }
+            }*/
+          
+            /* On click: thicker black strokes  */
+          /*  &:active {
+              .search-path {
+                stroke: #111516;
+                stroke-width: 2px;
+              }
+            }
+          } */
+        .home {
+              background-image: url("https://i.imgur.com/WaGNy22.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: #ecf4f6;
+              height: 100vh;
+             
+          }
+        
+          
+          .mainText {
+              
+              width: 30%;
+              height: 60vh;
+              float: left;
+              margin-left: 60px;
+              margin-top: 100px;
+              font-size: 50px;
+              text-align: left;
+              font-family: Libre Baskerville;
+          }
+          .searchNav {
+             
+              height: 50px;
+              width: 51vh;
+              list-style: none;
+              border-radius: 5px 0px 0px 5px;
+              margin-left: 50px;
+              display: flex;
+             
+          }
+          .searchNav .li {
+            
+              list-style: none;
+              position: relative;
+              display: flex;
+          }
+          .searchNav .li a {
+              font-size: 10px;
+              color: white;
+              padding: 0px;
+              text-decoration: none;
+              font-family: Tahoma;
+              list-style: none;
+          }
+          .form {
+            background-color: rgb(243, 241, 241);
+            width: 30vh;
+            height: 40px;
+            
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 7px;
+            color: gray;
+            margin-left: -40px;
+            border-radius: 5px 0px 0px 5px;
+            
+          }
+          input.nosubmit {
+            border: 1px solid #555;
+            border: transparent;
+            width: 100%;
+            padding: 9px 4px 9px 40px;
+            background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+            border-radius: 5px 0px 0px 5px;
+          }
+          button {
+            all: unset;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+          } 
+          svg {
+            color: #000000;
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+            padding: 10px;
+            float: left;
+          }
+          ::-webkit-input-placeholder {
+              color: gray;
+          }      
+          :-moz-placeholder {
+              color: gray;
+          }
+          :-ms-input-placeholder {
+              color: gray;
+          }
+        
+        .searchNav .locations {
+            background-image: url(triangle.png);
+            background-position: 85% center;
+            background-repeat: no-repeat;
+            width: 20vh;
+            font-size: small;
+            margin-left: 0px;
+            align-items: center;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 0px 5px 5px 0px;
+            background-color: orange;
+            white-space: nowrap;
+            cursor: pointer;
+            
+        }
+        .l-button {
+            display: inline-block;
+            font-family: Tahoma;
+            border-radius: 4px;
+            padding: 10px 40px 10px 20px;
+            background-color: orange;
+            cursor: pointer;
+            white-space: nowrap;
+            color: white;
+          }
+          
+          .l-button:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid white;
+          }
+          
+          .l-button:hover {
+            background-color: orange;
+          }
+          
+          
+          .l-input {
+            display: none;
+          }
+          
+        .subnav {
+            visibility: hidden;
+            position: absolute;
+            top: 110%;
+            right: 0;
+            width: 200px;
+            height: auto;
+            opacity: 0;
+            transition: all 0.1s;
+            background: #232323;
+        }
+       
+     
+      ul {
+          padding:0;
+          list-style: none;
+      }
+      .footer-social-icons {
+          width: 350px;
+          display:block;
+          margin-left: -5px;
+          font-family: Tahoma;
+      }
+      .social-icon {
+          color: #fff;
+          font-family: Tahoma;
+          text-decoration-color: gray;
+      }
+      ul.social-icons {
+          margin-top: 10px;
+          font-family: Tahoma;
+      }
+      .social-icons li {
+          vertical-align: top;
+          display: inline-flex;
+          height: 5px;
+          font-family: Tahoma;
+      }
+      .social-icons a {
+          color: orange;
+          text-decoration: none;
+          font-size: large;
+          font-family: Tahoma;
+          gap: 0.2px;
+          text-decoration-color: gray;
+      }
+      
+      span {
+        font-size: medium;
+        color: gray;
+        font-family: Tahoma;
+      }
+      .fa-facebook {
+          padding:10px 14px;
+          -o-transition:.5s;
+          -ms-transition:.5s;
+          -moz-transition:.5s;
+          -webkit-transition:.5s;
+          transition: .5s;
+          background-color: transparent;
+      }
+      .fa-facebook:hover {
+          background-color: #3d5b99;
+      }
+      .fa-twitter {
+          padding:10px 12px;
+          -o-transition:.5s;
+          -ms-transition:.5s;
+          -moz-transition:.5s;
+          -webkit-transition:.5s;
+          transition: .5s;
+          background-color: transparent;
+      }
+      .fa-twitter:hover {
+          background-color: #00aced;
+      }
+      .fa-instagram {
+          padding:10px 14px;
+          -o-transition:.5s;
+          -ms-transition:.5s;
+          -moz-transition:.5s;
+          -webkit-transition:.5s;
+          transition: .5s;
+          background-color: transparent;
+      }
+      .fa-instagram:hover {
+          background-color: #5a32a3;
+      }
+      .aboutUs {
+        border: 1px solid red;
+        height: 100vh;
+        background-image: url("https://i.imgur.com/WwZHeq0.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #ecf4f6;
+
+      }
+      .aboutUs .aboutGap {
+          border: 1px solid red;
+          float: left;
+          width: 30%;
+          height: 100vh;
+      }
+      .aboutUs .aboutMain {
+          border: 1px solid blue;
+          margin-right: 2.5%;
+          margin-left: 10%;
+          float: left;
+          width: 42%;
+          height: 100vh;
+
+      }
+      .aboutHeading {
+          font-size: small;
+          color: orange;
+          font-family: Tahoma;
+          height: 1vh;
+          margin-top: 10vh;
+      }
+        .aboutMaintext {
+            font-size: 50px;
+            color: black;
+            font-family: Libre Baskerville;
+            height: 15vh;
+            margin-top: 5vh;
+            text-align: left;
+        }
+        .aboutDesc {
+          font-family: Tahoma;
+          color: black;
+          height: 20vh;
+          font-size: smaller;
+          margin-top: 5vh;
+        }
+        .dMenu {
+          margin-top: 10vh;
+        }
+        .dNav {
+             
+          height: 50px;
+          width: 51vh;
+          list-style: none;
+          border-radius: 5px 0px 0px 5px;
+          margin-left: 50px;
+          display: flex;
+         
+      }
+      .dNav .li {
+        
+          list-style: none;
+          position: relative;
+          display: flex;
+      }
+        .d-button {
+          display: inline-block;
+          font-family: Tahoma;
+          border-radius: 4px 0px 0px 4px;
+          padding: 10px 40px 10px 20px;
+          background-color: orange;
+          white-space: nowrap;
+          color: white;
+          width: 35px;
+          height: 25px;
+          font-size: 10px;
+          text-align: center;
+        }
+        
+        
+        .d-button:hover {
+          background-color: orange;
+        }
+        .d-arrow {
+          display: inline-block;
+          font-family: Tahoma;
+          border-radius: 0px 4px 4px 0px;
+          padding: 10px 40px 10px 20px;
+          background-color: rgb(241, 176, 54);
+          cursor: pointer;
+          white-space: nowrap;
+          color: white;
+          width: 1px;
+          height: 25px;
+        }
+        
+        .d-input {
+          display: none;
+        }
+        .d-inputArrow {
+          border-color: transparent transparent transparent white;
+                        border-width: 8px 0px 8px 8px;
+                        border-style: solid;
+                        background-color: transparent;
+
+                        /* Size */
+                        height: 0px;
+                        width: 0px;
+        }
+
+        
