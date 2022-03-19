@@ -1,0 +1,448 @@
+<html>
+    <style>
+        .navbar {
+          width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 11px 11px;
+            background-color: #000000;
+            color: #fff;
+            height: 25px;
+            gap: 0.5em;
+            font-family: Tahoma;
+           }
+        .nav-links a {
+            color: #fff;
+           }
+        .logo {
+            padding: 5px 0px;
+            height: 25px;
+            width: 20px;
+            gap: 1em;
+           }
+        .signin {
+            width: 25px;
+            height: 20px;  
+            border-radius: 50%;
+            color: #FFFFFF;
+            padding: 0px 40px;
+          }
+          .text {
+            font-size:10px;
+            padding-left:0px;
+            vertical-align:left;
+          }
+          
+          .menu {
+            display: flex;
+            list-style: none;
+            gap: 1em;
+            font-size: 18px;
+            align-items: center;
+           }
+           .menu li:hover {
+            background-color: #4c9e9e;
+            border-radius: 5px;
+            transition: 0.3s ease;
+           }
+           .menu li {
+            padding: 5px;
+            margin-left: 10px;
+            display: inline-table;
+            
+           }
+           /* DROPDOWN MENU */
+           .more {
+            position: relative; 
+           
+           }
+           .arrow {
+             position: inherit;
+            float: right;
+            height: 0px; width: 0px;
+	        border: 3px solid;
+	        border-color: 
+	    	white
+	    	white
+	    	transparent
+	    	transparent;
+	        transform: rotate(135deg);
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+           .dropdown {
+            background-color: rgb(1, 139, 139);
+            padding: 1em 0;
+            position: absolute; /*WITH RESPECT TO PARENT*/
+            display: none;
+            border-radius: 8px;
+            top: 35px;
+           }
+           .dropdown li + li {
+            margin-top: 10px;
+           }
+           .dropdown li {
+            padding: 0.5em 1em;
+            width: 8em;
+            text-align: center;
+           }
+           .dropdown li:hover {
+            background-color: #4c9e9e;
+           }
+           .more:hover .dropdown {
+            display: block;
+           }
+           .form {
+             margin-top: 1rem;
+             background-color: #fff;
+             width: 195px;
+             height: 25px;
+             border-radius: 5px;
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+           }
+           input {
+             all: unset;
+             font: 16px system-ui;
+             color: #000000;
+             height: 100%;
+             width: 100%;
+             padding: 6px 10px;
+           }
+           button {
+             all: unset;
+             cursor: pointer;
+             width: 44px;
+             height: 44px;
+           } 
+           svg {
+             color: #000000;
+             fill: currentColor;
+             width: 24px;
+             height: 24px;
+             padding: 10px;
+           }
+           .mainSection {
+            margin: 2px;
+            width:100%;
+            height: 75%;
+            
+            font-family: Tahoma;
+           }  
+           .heading {
+             width: 100%;
+             
+             display: inline-block;
+             font-family: Tahoma;
+           }
+           #lefth2 {
+             float: left; 
+           }
+           #righth2 {
+             float: right;
+             color: grey; 
+             padding-right: 30px;
+             text-decoration: none;
+           }  
+           .msLeft {
+            margin-top: 0.7rem;
+            width: 47%;
+            height: 60vh;
+            float: left;
+           } 
+           .container {
+            display: inline-block;
+            position: relative;
+          } 
+          .msLeft .img {
+            height: 65px;
+          }
+          .textLeft {
+            background: transparent;
+            z-index: 1;
+            position: absolute;
+            text-align: left;
+            font-family: Tahoma;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
+            top: 50%;
+            color: white;
+            width: 70%;
+            padding-left: 0;
+            
+          }
+          .textLeft .leftHeading {
+            display: inline-table;
+            border-left: 3px solid red;
+            margin-left: .7vw !important;
+            padding-left: .7vw !important;
+          }
+           .msRight {
+            
+            width: 50%;
+            height: 60vh;
+            float: right;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+           }
+           .msRight-article {
+            
+            height: 26vh;
+            margin: 0.5rem;
+            margin-top: 0%;
+            font-size: smaller;
+            width: 40vh;
+            display: inline-block;
+            position: relative;
+           }
+           .textRight {
+            background: transparent;
+            z-index: 1;
+            position: absolute;
+            text-align: left;
+            font-family: Tahoma;
+            margin: 0 0;
+            right: 0;
+            left: 0;
+            top: 40%;
+            color: white;
+            width: 100%;
+            font-size: x-small;
+          }
+          .textRight .rightHeading {
+            display: inline-table;
+            border-left: 3px solid rgb(109, 5, 5);
+            margin-left: .7vw !important;
+            padding-left: .7vw !important;
+          }
+          
+          .textRight1 {
+            background: transparent;
+            z-index: 1;
+            position: absolute;
+            text-align: left;
+            font-family: Tahoma;
+            margin: 0 0;
+            right: 0;
+            left: 0;
+            top: 40%;
+            color: white;
+            width: 100%;
+            font-size: x-small;
+          }
+          .textRight1 .rightHeading1 {
+            display: inline-table;
+            border-left: 3px solid blue;
+            margin-left: .7vw !important;
+            padding-left: .7vw !important;
+          }
+          .textRight2 {
+            background: transparent;
+            z-index: 1;
+            position: absolute;
+            text-align: left;
+            font-family: Tahoma;
+            margin: 0 0;
+            right: 0;
+            left: 0;
+            top: 40%;
+            color: white;
+            width: 100%;
+            font-size: x-small;
+          }  
+          .textRight2 .rightHeading1 {
+            display: inline-table;
+            border-left: 3px solid blue;
+            margin-left: .7vw !important;
+            padding-left: .7vw !important;
+          }
+          .textRight3 {
+            background: transparent;
+            z-index: 1;
+            position: absolute;
+            text-align: left;
+            font-family: Tahoma;
+            margin: 0 0;
+            right: 0;
+            left: 0;
+            top: 40%;
+            color: white;
+            width: 100%;
+            font-size: x-small;
+          }  
+          .textRight3 .rightHeading {
+            display: inline-table;
+            border-left: 3px solid rgb(109, 5, 5);
+            margin-left: .7vw !important;
+            padding-left: .7vw !important;
+          }  
+          #right1 {
+             float: right;
+           } 
+           #left1 {
+             float: left; 
+           }
+           #left2 {
+             float: left;
+           }
+           #right2 {
+             float: right;
+           }
+           .bottomPage {
+            width: 100%;
+            height: 70%;
+            clear: both;
+            font-family: Tahoma;
+            
+           }
+           .bottomPage img {
+             width: 100%;
+             height: auto;
+           }
+           .bottompage section {
+            float: left;
+            width: 30%;
+            margin-right: 35px;
+            margin-left: 7px;
+          }
+          .bottomPage section .leftHeading {
+          
+              display: inline-table;
+              border-left: 3px solid red;
+              margin-left: .7vw !important;
+              padding-left: .7vw !important;
+          }
+    </style>
+    <head></head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo"><img src="https://drive.google.com/thumbnail?id=1q-Sqp2DGd-TsI50-c0rVM1_9-RRByJ9_" width="100px;" height="25px;" vertical-align="middle;" padding="0px 0px;"></div>
+                <span class="vertical-line"></span>
+                <!--SIGN IN -->
+                <div class="signin"><img src="https://drive.google.com/thumbnail?id=1-VZqzYhrgorLYkprRWn75bqUmzNyBaPp" class="signin" width="25px;" height="25px;" vertical-align="middle;"/></div>
+                <div class="text"><h2 style="font-family: Tahoma;">Sign in</h2></div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                  <!-- NAVIGATION MENUS -->
+                  <div class="menu">
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Home</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">News</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Sport</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Reel</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Worklife</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Travel</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Future</a></li>
+                    <li><a href="/" style="text-decoration:none; cursor:default !important">Culture</a></li>
+                    <li class="more">
+                      <a href="/" style="text-decoration:none; cursor:default !important">More</a>
+                      <span class="arrow"></span>
+                      <!-- DROPDOWN MENU -->
+                      <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                      </ul>
+                    </li>
+                  </div>
+                </ul>
+                <form class="form" role="search"><input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                  <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+                </form>
+              </nav>
+        </header>
+        <section class="mainSection">
+
+          <section class="heading">
+              <h2 id="lefth2">Welcome to BBC.com</h2> <h2 id="righth2">Thursday, 13 August</h2>
+          </section>
+          
+          <section class="msLeft">
+            <div class="container">
+              <img src="https://drive.google.com/thumbnail?id=1CsmM-4j3pi83kQyLclI5y-vMFhEjKURy" width="290px" height="370px">
+              <img src="https://drive.google.com/thumbnail?id=1V-Ro9nn4FO8-xZIUUdcO-xQ-QW1CPasE" width="290px" height="370px">
+              <diV class="textLeft">
+            <h1>Israel and UAE Strike historic peace deal</h1>
+            <p>Israel and the UAE agree to normalize relations, marking the third Israel-Arab peace deal.</p>
+            <span class="leftHeading">MIDDLE EAST</span>
+            </diV>
+            </div>
+            </section>
+
+          <section class="msRight">
+            <section id="left1" class="msRight-article">
+              <div>
+                <img src="https://drive.google.com/thumbnail?id=1CyE3iIpMtsjRve2k3BB5CCYZ0oe01sI7" width="100%" height="100%">
+              <div class="textRight"><h2>Americans, go home:Tension at Canada-US Border</h2>
+              <span class="rightHeading"><B>CANADA</B></span>
+              </div>
+              </div>
+            </section>
+    
+            <section id="right1" class="msRight-article">
+              <div>
+                <img src="https://drive.google.com/thumbnail?id=1up529-UgDV8M8mIA1-UWbP8csjoUZAgw" width="100%" height="100%">
+              <div class="textRight1"><h2>How will the world vaccinate seven billion people?</h2>
+              <span class="rightHeading1"><b>HEALTH</b></span>
+              </div>
+              </div>
+            </section>
+    
+            <section id="left2" class="msRight-article">
+              <div>
+                <img src="https://drive.google.com/thumbnail?id=1JxELzyLufGZsmaAiHJ4Kckf_jIaCSSWI" width="100%" height="100%">
+              <div class="textRight2"><h2>The online 'productivity gyms'</h2>
+              <span class="rightHeading1"><b>WORKLIFE</b></span>
+              </div>
+              </div>
+            </section>
+    
+            <section id="right2" class="msRight-article">
+              <div>
+                <img src="https://drive.google.com/thumbnail?id=1OPqAEv1AxTWh529KJ8KvX6kByc4KAFRG" width="100%" height="100%">
+              <div class="textRight3"><h2>The folk singer murdered for his music</h2>
+              <span class="rightHeading"><b>CULTURE</b></span>
+              </div>
+              </div>
+            </section>
+
+          </section>
+         </section>
+
+         <section class="bottomPage">
+          <h2>News</h2>
+    
+          <section>
+              <img src="https://drive.google.com/thumbnail?id=1VuoTyT2TJwBSMUvH8bh_A9nD6Hj8CNUK" alt="Joe Biden">
+            <h3>Biden and Harris say Trump has left US 'in tatters'</h3>
+            <p>Joe Biden and running mate Kamala Harris call President Donald Trump
+              a "whining" incompetent leader".
+            </p>
+            <span class="leftHeading">US ELECTION 2020</span>
+          </section>
+    
+          <section>
+            <img src="https://drive.google.com/thumbnail?id=1VII-YeP1c7wo6ip0W2_5uW2T6oBtHR4W" alt="women protesting">
+            <h3>Women form 'solidarity chains' in Belarus protests</h3>
+            <p>Women take to the streets of Minsk dressed in white as they demand an end to police brutality </p>
+            <span class="leftHeading">EUROPE</span>
+          </section>
+    
+          <section>
+            <img src="https://drive.google.com/thumbnail?id=1b_Ea5QSoShEhOoPFy-R3hL6i4ml9Owy4" alt="Trump">
+            <h3>Trump says low-pressure shower heads won't wash</h3>
+            <p>The US calls for rules to be eased after Donald Trump complained of issues washing his hair.</p>
+            <span class="leftHeading">US & CANADA</span>
+          </section>
+        </section>
+    </body>
+</html>
